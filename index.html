@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-    <section class="lg:flex mx-4 mb-10 pb-8">
+    <section class="lg:flex m-10 mb-10">
         <!-- Mac Book image -->
         <div class="lg:flex-1 mr-2 px-6 pt-6">
             <img src="images/mac.png" alt="">
@@ -33,10 +32,10 @@
             <div class="pb-10">
                 <!--choose Memory -->
                 <h5 class="font-bold text-xl pb-2">Memory</h5>
-                <button
+                <button id="eight-gb"
                     class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">8GB
                     unified memory</button>
-                <button
+                <button id="sixteen-gb"
                     class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">16GB
                     unified
                     memory</button>
@@ -44,25 +43,27 @@
             <!-- choose storage -->
             <div class="pb-10">
                 <h5 class="font-bold text-xl pb-2">Storage</h5>
-                <button
+                <button id="256GB"
                     class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">256GB
                     SSD storage</button>
-                <button
+                <button id="512GB"
                     class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">512GB
                     SSD storage</button>
-                <button
+                <button id="1TB"
                     class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">1TB
                     SSD storage</button>
             </div>
             <!-- choose delivery option -->
             <div class="pb-10">
                 <h5 class="font-bold text-xl pb-2">Choose your delivery option</h5>
-                <button
-                    class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Friday,Aug
+                <button id="free"
+                    class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Friday,
+                    Aug
                     25 FREE Prime
                     Delivery</button>
-                <button
-                    class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Friday,Aug
+                <button id="charged"
+                    class="px-4 py-2 border-2 border-gray-500 rounded text-xl hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Friday,
+                    Aug
                     21 Delivery charge
                     $20</button>
             </div>
@@ -70,38 +71,39 @@
             <div class="grid grid-cols-1 divide-y divide-blue-300">
                 <div class="flex justify-between bg-blue-100 lg:w-1/2 p-2">
                     <h3 class="font-bold text-xl pb-2">Best Price</h3>
-                    <h3 class="font-bold text-xl pb-2">$<span>1299</span> </h3>
+                    <h3 class="font-bold text-xl pb-2">$<span id="best-price">1299</span> </h3>
                 </div>
                 <div class="flex justify-between bg-blue-100 lg:w-1/2 p-2">
                     <h3 class="font-bold text-xl pb-2">Extra Memory Cost</h3>
-                    <h3 class="font-bold text-xl pb-2">$<span>0</span> </h3>
+                    <h3 class="font-bold text-xl pb-2">$<span id="memory-cost">0</span></h3>
                 </div>
                 <div class="flex justify-between bg-blue-100 lg:w-1/2 p-2">
                     <h3 class="font-bold text-xl pb-2">Extra Storage cost</h3>
-                    <h3 class="font-bold text-xl pb-2">$<span>0</span></h3>
+                    <h3 class="font-bold text-xl pb-2">$<span id="storage-cost">0</span></h3>
                 </div>
                 <div class="flex justify-between bg-blue-100 lg:w-1/2 p-2">
                     <h3 class="font-bold text-xl pb-2">Delivery Charge</h3>
-                    <h3 class="font-bold text-xl pb-2">$<span>0</span></h3>
+                    <h3 class="font-bold text-xl pb-2">$<span id="delivery-cost">0</span></h3>
                 </div>
             </div>
             <hr class="w-1/2 border border-gray-800">
             <div class="flex justify-between bg-blue-100 lg:w-1/2 p-2 mb-8">
                 <h3 class="font-bold text-xl pb-2">Total Price</h3>
-                <h3 class="font-bold text-xl pb-2">$<span>1299</span></h3>
+                <h3 class="font-bold text-xl pb-2">$<span id="total-price">1299</span></h3>
             </div>
             <hr class="w-1/2 mb-4 border border-gray-200">
             <div>
                 <h3 class="font-semibold text-xl pb-2">Add Promo Code</h3>
-                <input class="px-4 py-2 border-2 border-gray-300 rounded text-xl" type="text">
-                <button
+                <input id="promo-code" class="px-4 py-2 border-2 border-gray-300 rounded text-xl" type="text">
+                <button id="apply-button"
                     class="px-4 py-2 border-2 border-red-500 rounded text-xl bg-red-500  hover:bg-red-700 text-white">Apply</button>
             </div>
         </div>
     </section>
     <hr class="mx-8 border border-gray-300">
     <section class="m-6 p-8">
-        <h1 class="lg:text-6xl md:text-4xl text-2xl font-semibold text-center">Total: $<span id="">1299</span></h1>
+        <h1 class="lg:text-6xl md:text-4xl text-2xl font-semibold text-center">Total: $<span
+                id="bottom-total">1299</span></h1>
     </section>
     <!-- javascript  -->
     <script src="js/mac-book.js"></script>
